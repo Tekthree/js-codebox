@@ -2,6 +2,7 @@ import "./style.css";
 import javascriptLogo from "./javascript.svg";
 import { setupCounter } from "./counter.js";
 import { jsTest } from "./jsTest.js";
+import { noElse } from "./noElse.js";
 
 document.querySelector("#app").innerHTML = `
   <div>
@@ -22,8 +23,14 @@ document.querySelector("#app").innerHTML = `
     <div>
       <h3 id="headThree">💃🏾💀</h3>
     </div>
+    <div>
+      <h3 id="headFour">💃🏾💀</h3>
+    </div>
+
+  
   </div>
 `;
 
 setupCounter(document.querySelector("#counter"));
 jsTest(document.querySelector("#headThree"));
+noElse(document.querySelector("#headFour"));
